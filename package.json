@@ -22,6 +22,7 @@
     "defaults"
   ],
   "devDependencies": {
+    "animate.css": "^3.7.2",
     "autoprefixer": "^9.6.1",
     "browser-sync": "^2.26.7",
     "del": "^5.0.0",
@@ -37,6 +38,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
+    "normalize.css": "^8.0.1",
     "posthtml-include": "^1.2.0",
     "stylelint": "^10.1.0",
     "stylelint-config-htmlacademy": "^0.1.4"
