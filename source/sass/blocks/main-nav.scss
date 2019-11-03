@@ -1,0 +1,35 @@
+.main-nav__list {
+  @include resetList;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main-nav__link {
+  display: block;
+
+  margin: 0;
+  padding: 10px 40px;
+
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.42px;
+
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: #283891;
+    transition: all 0.3s;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.main-nav__wrapper {
+  display: none;
+}

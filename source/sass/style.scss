@@ -1,6 +1,10 @@
 @import "../../node_modules/animate.css/animate";
 @import "../../node_modules/normalize.css/normalize";
-@import "mixins.scss";
-@import "variables.scss";
-@import "scaffolding.scss";
-@import "blocks/visually-hidden.scss";
+@import "mixins";
+@import "variables";
+@import "scaffolding";
+@import "blocks/visually-hidden";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/contacts";
+@import "blocks/flag";

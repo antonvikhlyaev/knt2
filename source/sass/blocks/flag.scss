@@ -1,0 +1,29 @@
+.flag {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  width: 41px;
+  height: 42px;
+
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: none;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 2px solid #00aeef;
+    border-radius: 50%;
+  }
+}
+
+.flag__image {
+  display: block;
+
+  width: 37px;
+  height: 38px;
+}
