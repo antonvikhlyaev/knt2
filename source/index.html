@@ -108,11 +108,11 @@
             <a class="slider__button button" href="callback.html">Обратный звонок</a>
           </li>
           <li class="slider__item">
-            <h2 class="slider__title">Продажа ПВХ-пластика</h2>
+            <h2 class="slider__title">Продажа<br> ПВХ-пластика</h2>
             <a class="slider__button button" href="callback.html">Обратный звонок</a>
           </li>
           <li class="slider__item">
-            <h2 class="slider__title">Поставки ПВХ-пластика</h2>
+            <h2 class="slider__title">Поставки<br> ПВХ-пластика</h2>
             <a class="slider__button button" href="callback.html">Обратный звонок</a>
           </li>
         </ul>
@@ -232,5 +232,16 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider__list').slick({
+        autoplay: true,
+        autoplaySpeed: 7000,
+        arrows: false,
+        dots: true,
+        dotsClass: 'slider__controls'
+      });
+    });
+  </script>
 </body>
 </html>

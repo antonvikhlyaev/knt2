@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  padding: 30px 50px;
+
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  background-color: #273896;
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: #0e1d72;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    background-color: #00aeef;
+  }
+}
