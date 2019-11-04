@@ -7,6 +7,8 @@
 }
 
 .page-header__bar {
+  position: relative;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -38,10 +40,6 @@
 }
 
 .page-header__toggle {
-  display: none;
-}
-
-.page-header__languages {
   display: none;
 }
 
@@ -91,4 +89,15 @@
     background-color: #000000;
     transform: rotate(-45deg);
   }
+}
+
+.page-header__languages {
+  display: none;
+  top: 65px;
+  right: -135px;
+}
+
+.page-header__flag:hover + .page-header__languages,
+.page-header__flag:focus + .page-header__languages {
+  display: block;
 }
