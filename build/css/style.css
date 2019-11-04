@@ -2646,7 +2646,8 @@ img {
 
 .page-header__flag:hover + .page-header__languages,
 .page-header__flag:focus + .page-header__languages {
-  display: block; }
+  display: block;
+  transition: all 0.3s; }
 
 .main-nav__list {
   margin: 0;
@@ -2939,7 +2940,8 @@ img {
   transform: translateX(-50%);
   z-index: 100; }
   .languages:hover, .languages:focus {
-    display: block; }
+    display: block;
+    transition: all 0.3s; }
 
 .languages__list {
   margin: 0;
