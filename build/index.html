@@ -27,7 +27,7 @@
         <button class="page-header__flag flag flag--rus" aria-label="Текущая версия">
           <img class="flag__image" src="img/rus.png" width="37" height="38" alt="Сайт на русском языке">
         </button>
-        <div class="page-header__languages languages languages--closed">
+        <div class="page-header__languages languages">
           <ul class="languages__list">
             <span class="visually-hidden">Выберите язык</span>
             <li class="languages__item languages__item--active">
@@ -127,48 +127,48 @@
     </section>
     <section class="use">
       <div class="use__container">
-        <h2 class="use__title heading">Сферы применения нашего пластика</h2>
+        <h2 class="use__title heading">Сферы применения<br> нашего пластика</h2>
         <form class="use__form" action="https://echo.htmlacademy.ru" method="POST">
           <ul class="use__list">
             <li class="use__item">
-              <input class="visually-hidden" type="radio" name="use" value="medical-products" id="medical-products">
-              <label for="medical-products">Медицинские изделия</label>
+              <input class="visually-hidden" type="radio" name="use" value="medical-products" id="medical-products" checked="">
+              <label class="use__label" for="medical-products">Медицинские изделия</label>
             </li>
             <li class="use__item">
               <input class="visually-hidden" type="radio" name="use" value="footwear" id="footwear">
-              <label for="footwear">Обувь</label>
+              <label class="use__label" for="footwear">Обувь</label>
             </li>
             <li class="use__item">
               <input class="visually-hidden" type="radio" name="use" value="hoses" id="hoses">
-              <label for="hoses">Шланги поливочные прозрачные</label>
+              <label class="use__label" for="hoses">Шланги поливочные прозрачные</label>
             </li>
             <li class="use__item">
               <input class="visually-hidden" type="radio" name="use" value="for-boats" id="for-boats">
-              <label for="for-boats">Комплектующие для лодок из ПВХ</label>
+              <label class="use__label" for="for-boats">Комплектующие для лодок из ПВХ</label>
             </li>
             <li class="use__item">
               <input class="visually-hidden" type="radio" name="use" value="floor-coverings" id="floor-coverings">
-              <label for="floor-coverings">Напольные покрытия</label>
+              <label class="use__label" for="floor-coverings">Напольные покрытия</label>
             </li>
             <li class="use__item">
               <input class="visually-hidden" type="radio" name="use" value="stretch-ceiling" id="stretch-ceiling">
-              <label for="stretch-ceiling">Комплектующие для натяжных потолков</label>
+              <label class="use__label" for="stretch-ceiling">Комплектующие для натяжных потолков</label>
             </li>
             <li class="use__item">
               <input class="visually-hidden" type="radio" name="use" value="door-seal" id="door-seal">
-              <label for="door-seal">Уплотнитель для дверей</label>
+              <label class="use__label" for="door-seal">Уплотнитель для дверей</label>
             </li>
             <li class="use__item">
               <input class="visually-hidden" type="radio" name="use" value="window-seal" id="window-seal">
-              <label for="window-seal">Оконные статические уплотнения</label>
+              <label class="use__label" for="window-seal">Оконные статические уплотнения</label>
             </li>
             <li class="use__item">
               <input class="visually-hidden" type="radio" name="use" value="baseboard-seal" id="baseboard-seal">
-              <label for="baseboard-seal">Мягкий край (уплотнения) плинтуса</label>
+              <label class="use__label" for="baseboard-seal">Мягкий край (уплотнения) плинтуса</label>
             </li>
             <li class="use__item">
               <input class="visually-hidden" type="radio" name="use" value="refrigerator-seal" id="refrigerator-seal">
-              <label for="refrigerator-seal">Уплотнения для холодильников</label>
+              <label class="use__label" for="refrigerator-seal">Уплотнения для холодильников</label>
             </li>
           </ul>
           <button class="visually-h1idden use__submit">Показать результат</button>
@@ -207,7 +207,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-container">
+    <div class="page-footer__container">
       <div class="page-footer__left">
         <a class="page-footer__logo">
           <img class="page-footer__logo-image" src="img/logo.png" alt="Логотип KNTPLAST">
@@ -242,6 +242,10 @@
         dotsClass: 'slider__controls'
       });
     });
+  </script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
   </script>
 </body>
 </html>
