@@ -33,15 +33,15 @@
             <li class="languages__item languages__item--active">
               <img class="languages__image" src="img/rus.png" width="37" height="38" alt="Русский">
               <div class="languages__wrapper">
-                <p class="languages__text">Russian</p>
-                <span class="languages__abbreviation">Ru (исходный язык)</span>
+                <a class="languages__link" href="#">Russian</a>
+                <span class="languages__text">Ru (исходный язык)</span>
               </div>
             </li>
             <li class="languages__item">
               <img class="languages__image" src="img/eng.png" width="37" height="38" alt="Английский">
               <div class="languages__wrapper">
-                <p class="languages__text">English</p>
-                <span class="languages__abbreviation">En</span>
+                <a class="languages__link" href="#">English</a>
+                <span class="languages__text">En</span>
               </div>
             </li>
           </ul>
@@ -101,22 +101,26 @@
   <main class="page-content">
     <h1 class="visually-hidden">Сайт КНТПласт - производство ПВХ-пластика</h1>
     <section class="slider">
-      <div class="slider__container">
-        <ul class="slider__list">
-          <li class="slider__item">
+      <ul class="slider__list">
+        <li class="slider__item">
+          <div class="slider__container">
             <h2 class="slider__title">Производство ПВХ-пластика</h2>
             <a class="slider__button button" href="callback.html">Обратный звонок</a>
-          </li>
-          <li class="slider__item">
+          </div>
+        </li>
+        <li class="slider__item">
+          <div class="slider__container">
             <h2 class="slider__title">Продажа<br> ПВХ-пластика</h2>
             <a class="slider__button button" href="callback.html">Обратный звонок</a>
-          </li>
-          <li class="slider__item">
+          </div>
+        </li>
+        <li class="slider__item">
+          <div class="slider__container">
             <h2 class="slider__title">Поставки<br> ПВХ-пластика</h2>
             <a class="slider__button button" href="callback.html">Обратный звонок</a>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </li>
+      </ul>
     </section>
     <section class="about wow fadeIn slow">
       <div class="about__container">
@@ -236,10 +240,13 @@
     $(document).ready(function(){
       $('.slider__list').slick({
         autoplay: true,
-        autoplaySpeed: 7000,
+        autoplaySpeed: 5000,
         arrows: false,
         dots: true,
-        dotsClass: 'slider__controls'
+        dotsClass: 'slider__controls',
+        fade: true,
+        speed: 1000,
+        infinite: true
       });
     });
   </script>
