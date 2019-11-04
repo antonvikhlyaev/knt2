@@ -2971,7 +2971,7 @@ img {
   flex-direction: column;
   position: relative;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #ffffff; }
   .languages__list::before {
     content: "";
@@ -2983,7 +2983,7 @@ img {
   .languages__list::after {
     content: "";
     position: absolute;
-    top: -8px;
+    top: -9px;
     right: 18px;
     width: 34px;
     height: 34px;
