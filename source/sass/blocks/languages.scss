@@ -44,7 +44,7 @@
 
   padding: 20px;
 
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #ffffff;
 
   &::before {
@@ -60,7 +60,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: -8px;
+    top: -9px;
     right: 18px;
 
     width: 34px;
