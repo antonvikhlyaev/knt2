@@ -100,4 +100,5 @@
 .page-header__flag:hover + .page-header__languages,
 .page-header__flag:focus + .page-header__languages {
   display: block;
+  transition: all 0.3s;
 }
