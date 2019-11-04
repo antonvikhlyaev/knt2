@@ -12,6 +12,29 @@
   transform: translateX(-50%);
   z-index: 100;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: 15px;
+
+    border: 20px solid transparent;
+    border-bottom: 20px solid #8f2796;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    right: 18px;
+
+    width: 34px;
+    height: 34px;
+
+    background-color: #ffffff;
+    transform: rotate(45deg);
+  }
+
   &:hover,
   &:focus {
     display: block;
@@ -57,12 +80,21 @@
   flex-direction: column;
 }
 
-.languages__text {
+.languages__link {
   margin: 0;
   padding: 0;
+
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: #283891;
+    transition: all 0.3s;
+  }
 }
 
-.languages__abbreviation {
+.languages__text {
   margin: 0;
   padding: 0;
 

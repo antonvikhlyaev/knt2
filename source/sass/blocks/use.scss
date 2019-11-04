@@ -29,6 +29,7 @@
   & input[type="radio"]:checked + .use__label {
     color: #ffffff;
     background-color: #00aeef;
+    border-color: #00aeef;
     transition: all 0.3s;
   }
 }
@@ -48,6 +49,12 @@
 
   border: 2px solid #00aeef;
   border-radius: 8px;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #273896;
+    transition: all 0.3s;
+  }
 }
 
 .use__submit {
@@ -72,6 +79,12 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-10px);
+    transition: all 0.3s;
   }
 }
 
