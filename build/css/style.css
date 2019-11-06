@@ -2517,6 +2517,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 28px;
   font-weight: 400;
+  color: #414147;
   background-color: #ffffff; }
 
 a {
@@ -2648,6 +2649,9 @@ img {
 .page-header__flag:focus + .page-header__languages {
   display: block;
   transition: all 0.3s; }
+
+.inner-page .page-header {
+  margin-bottom: 60px; }
 
 .main-nav__list {
   margin: 0;
@@ -2805,6 +2809,42 @@ img {
   background-image: url("../img/about.png");
   background-position: top 80px left 0;
   background-repeat: no-repeat; }
+
+.inner-page .about__container {
+  padding-top: 0;
+  padding-left: 30px;
+  background: none; }
+
+.inner-page .about__wrapper {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .inner-page .about__wrapper:last-child {
+    margin-bottom: 0; }
+  .inner-page .about__wrapper--left {
+    padding-right: 820px; }
+    .inner-page .about__wrapper--left::before {
+      content: "";
+      position: absolute;
+      top: 150px;
+      right: 0;
+      width: 788px;
+      height: 543px;
+      background-image: url("../img/sitio-residuos-plasticos.jpg");
+      background-position: center;
+      background-repeat: no-repeat; }
+  .inner-page .about__wrapper--right {
+    padding-left: 820px; }
+    .inner-page .about__wrapper--right::before {
+      content: "";
+      position: absolute;
+      top: 220px;
+      left: 0;
+      width: 769px;
+      height: 491px;
+      background-image: url("../img/gloves.jpg");
+      background-position: center;
+      background-repeat: no-repeat; }
 
 .use__container {
   margin: 0 auto;
@@ -3022,3 +3062,31 @@ img {
   padding: 0;
   font-size: 16px;
   color: #413d3d; }
+
+.breadcrumbs__list {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 1700px;
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  list-style: none; }
+
+.breadcrumbs__item {
+  position: relative;
+  padding-right: 40px; }
+  .breadcrumbs__item:last-child::after {
+    display: none; }
+  .breadcrumbs__item::after {
+    content: ">";
+    position: absolute;
+    right: 11px;
+    color: #adadad; }
+
+.breadcrumbs__link {
+  color: #adadad; }
+  .breadcrumbs__link:not([href]) {
+    color: #283891; }
+  .breadcrumbs__link:hover, .breadcrumbs__link:focus {
+    color: #283891;
+    transition: all 0.3s; }
