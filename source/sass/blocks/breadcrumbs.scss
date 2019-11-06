@@ -1,0 +1,42 @@
+.breadcrumbs__list {
+  @include container;
+
+  display: flex;
+  flex-direction: row;
+
+  font-size: 24px;
+
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  padding-right: 40px;
+
+  &:last-child::after {
+    display: none;
+  }
+
+  &::after {
+    content: ">";
+
+    position: absolute;
+    right: 11px;
+
+    color: #adadad;
+  }
+}
+
+.breadcrumbs__link {
+  color: #adadad;
+
+  &:not([href]) {
+    color: #283891;
+  }
+
+  &:hover,
+  &:focus {
+    color: #283891;
+    transition: all 0.3s;
+  }
+}

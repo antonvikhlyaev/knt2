@@ -9,3 +9,58 @@
   background-position: top 80px left 0;
   background-repeat: no-repeat;
 }
+
+
+.inner-page .about__container {
+  padding-top: 0;
+  padding-left: 30px;
+  background: none;
+}
+
+.inner-page .about__wrapper {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--left {
+    padding-right: 820px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 150px;
+      right: 0;
+
+      width: 788px;
+      height: 543px;
+
+      background-image: url("../img/sitio-residuos-plasticos.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--right {
+    padding-left: 820px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 220px;
+      left: 0;
+
+      width: 769px;
+      height: 491px;
+
+      background-image: url("../img/gloves.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
