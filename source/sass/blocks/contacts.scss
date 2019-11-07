@@ -1,31 +1,120 @@
-.contacts {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
+.contacts__container {
+  @include container;
+}
+
+.contacts__wrapper {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contacts__text {
+  line-height: 36px;
 }
 
 .contacts__link {
+  color: #414147;
+}
+
+.contacts__requisites {
   display: block;
-  margin: 0;
-  margin-right: 60px;
-  padding: 10px;
 
-  font-weight: 400;
-  font-size: 28px;
-  color: #000000;
-  letter-spacing: 0.42px;
+  position: relative;
+  margin-top: 40px;
 
-  &:hover,
-  &:focus {
-    color: #283891;
+  padding-top: 13px;
+  padding-left: 60px;
 
-    outline: none;
+  color: #414147;
+  text-decoration: underline;
 
-    transition: all 0.3s;
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 57px;
+
+    background-image: url("../img/icon-pdf.png");
+    background-repeat: no-repeat;
+    background-position: center;
   }
+}
+
+.contacts__list {
+  @include resetList;
+
+  margin-bottom: 50px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contacts__item {
+  margin-right: 25px;
+  margin-bottom: 25px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  & input[type="radio"]:checked + .contacts__label {
+    color: #ffffff;
+    background-color: #00aeef;
+    border-color: #00aeef;
+    transition: all 0.3s;
+  }
+}
+
+.contacts__label {
+  display: block;
+
+  margin: 0;
+  padding: 20px 35px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 1.13px;
+  color: #414147;
+
+  border: 2px solid #00aeef;
+  border-radius: 8px;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #273896;
+    transition: all 0.3s;
+  }
+}
+
+.contacts__submit {
+  display: none;
+}
+
+.contacts__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 50px;
+}
+
+.contacts__column {
+  width: 300px;
+
+  & a {
+    color: #414147;
+
+    &:hover,
+    &:focus {
+      color: #273896;
+      transition: all 0.3s;
+    }
   }
 }

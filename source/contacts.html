@@ -50,7 +50,7 @@
         <nav class="main-nav main-nav--closed">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link">О компании</a>
+              <a class="main-nav__link" href="about.html">О компании</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="products.html">Продукция</a>
@@ -62,7 +62,7 @@
               <a class="main-nav__link" href="partnership.html">Сотрудничество</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="contacts.html">Контакты</a>
+              <a class="main-nav__link">Контакты</a>
             </li>
           </ul>
           <div class="main-nav__wrapper">
@@ -106,28 +106,88 @@
             <a class="breadcrumbs__link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link">О компании</a>
+            <a class="breadcrumbs__link">Контакты</a>
           </li>
         </ul>
       </div>
-      <section class="about wow fadeIn slow">
-          <div class="about__container">
-            <div class="about__wrapper about__wrapper--left">
-              <h2 class="about__title heading">О компании</h2>
-              <p class="about__text">Завод ООО ПКФ "Полипласт" является производителем ПВХ-пластиката. Запущенный в 2006 году, он уже сумел завоевать репутацию надежного партнера для многочисленных заказчиков. </p>
-              <p class="about__text">ПВХ-пластикат служит сырьем для производства ПВХ-изделий: специальная обувь, обувные подошвы, кабельная оболочка, кабельная изоляция, гидроизоляционные материалы, шланги, трубы, уплотнители, мебельная кромка, напольная плитка, грязезащитные напольные покрытия и др.</p>
-              <p class="about__text">Продукция ООО ПКФ "Полипласт" изготовлена из высококачественного сырья на новейшем импортном оборудовании. Отвечает требованиям стандартов, а также может быть уникальной согласно требованиям заказчика.</p>
-              <p class="about__text">ООО ПКФ "Полипласт" обладает исключительной возможностью разработки рецептур по требованиям заказчика и технологическим сопровождением процесса использования. Производство осуществляется методом экструзии пластифицированной композиции.</p>
+      <section class="contacts wow fadeIn slow">
+          <div class="contacts__container">
+            <div class="contacts__wrapper">
+              <h2 class="contacts__title heading">Контакты</h2>
+              <p class="contacts__text"><b>Наши контакты в Ишимбае</b></p>
+              <p class="contacts__text">
+                г.Ишимбай, ул. Левый берег, 6<br>
+                Тел.: <a class="contacts__link" href="tel:+73472145140">+7 (3472) 14-51-40</a><br>
+                E-mail: <a class="contacts__link" href="mailto:info@kntplast.ru">info@kntplast.ru</a>, <a class="contacts__link" href="mailto:rmn@kntplast.ru">rmn@kntplast.ru</a>
+              </p>
+              <a class="contacts__requisites" href="#">Реквизиты компании</a>
             </div>
-            <div class="about__wrapper about__wrapper--right">
-              <h2 class="about__title heading">Описание производства</h2>
-              <p class="about__text">ПВХ-композиции производятся на импортном оборудовании по современным технологиям под контролем высококвалифицированных инженеров и технологов.  Сотрудники и специалисты завода имеют обширный опыт работы в данной сфере и современные взгляды на производство. Современная лаборатория позволяет постоянно совершенствовать стандартные рецептуры.</p>
-              <p class="about__text">ООО ПКФ "Полипласт" обладает исключительной возможностью разработки рецептур по требованиям заказчика и технологическим сопровождением процесса использования. Производство осуществляется методом экструзии пластифицированной композиции.</p>
-              <p class="about__text">Качество продукции подтверждается заключенными долгосрочными контрактами и положительными отзывами потребителей. Нашу продукцию по достоинству оценили сотни предприятий, расположенных по всей России. Среди них как небольшие предприятия, так и гиганты, известные своей продукцией в России и СНГ.</p>
-              <p class="about__text">Основное производство расположено в г. Ишимбай и занимает площадь 3000 кв.м. Установлены новейшие экструдеры импортного производства производительностью 1250 тн/мес.</p>
+            <form class="contacts__form" action="https://echo.htmlacademy.ru" method="POST">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <input class="visually-hidden" type="radio" name="use" value="sales-department" id="sales-department" checked>
+                  <label class="contacts__label" for="sales-department">Отдел продаж</label>
+                </li>
+                <li class="contacts__item">
+                  <input class="visually-hidden" type="radio" name="use" value="logistics-department" id="logistics-department" checked>
+                  <label class="contacts__label" for="logistics-department">Отдел логистики</label>
+                </li>
+                <li class="contacts__item">
+                  <input class="visually-hidden" type="radio" name="use" value="purchase-department" id="purchase-department">
+                  <label class="contacts__label" for="purchase-department">Отдел снабжения</label>
+                </li>
+              </ul>
+              <button class="visually-hidden contacts__submit">Показать результат</button>
+            </form>
+            <div class="contacts__columns">
+              <div class="contacts__column">
+                <h3 class="contacts__name">Александр Негодин</h3>
+                <span class="contacts__position">Менеджер по продажам
+                    кабельных марок</span>
+                <p class="contacts__phone">
+                  <a href="tel:+78005514153">+7 800 551 41 53</a><br>доб. 111
+                </p>
+                <p class="contacts__email">
+                  <a href="mailto:negodin@kntplast.ru">negodin@kntplast.ru</a>
+                </p>
+                <p class="contacts__qr">
+                  <img class="contacts__qr-image" src="img/qr-1.png" alt="QR Александр Негодин" >
+                </p>
+              </div>
+              <div class="contacts__column">
+                <h3 class="contacts__name">Рустам Малюков</h3>
+                <span class="contacts__position">Менеджер по продажам
+                    кабельных марок</span>
+                <p class="contacts__phone">
+                  <a href="tel:+78005514153">+7 800 551 41 53</a><br>доб. 111
+                </p>
+                <p class="contacts__email">
+                  <a href="mailto:negodin@kntplast.ru">rustam@kntplast.ru</a>
+                </p>
+                <p class="contacts__qr">
+                  <img class="contacts__qr-image" src="img/qr-1.png" alt="QR Александр Негодин" >
+                </p>
+              </div>
+              <div class="contacts__column">
+                <h3 class="contacts__name">Влад Полтавец</h3>
+                <span class="contacts__position">Менеджер по продажам
+                    литьевых марок</span>
+                <p class="contacts__phone">
+                  <a href="tel:+78005514153">+7 800 551 41 53</a><br>доб. 111
+                </p>
+                <p class="contacts__email">
+                  <a href="mailto:negodin@kntplast.ru">vlad@kntplast.ru</a>
+                </p>
+                <p class="contacts__qr">
+                  <img class="contacts__qr-image" src="img/qr-1.png" alt="QR Александр Негодин" >
+                </p>
+              </div>
             </div>
           </div>
         </section>
+      <section class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af28aff51b3ccf02f9868802ae42c58c6570d3e8282247f57d5a2a5e094e13714&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+      </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__container">
