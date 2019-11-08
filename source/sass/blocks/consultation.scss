@@ -1,0 +1,88 @@
+.consultation {
+  background-color: #f6f6f6;
+}
+
+.consultation__container {
+  @include container;
+  padding-top: 75px;
+  padding-bottom: 125px;
+}
+
+.consultation__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.consultation__text {
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+  padding-right: 980px;
+}
+
+.consultation__form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.consultation__item {
+  position: relative;
+
+  margin: 0;
+  margin-right: 100px;
+  padding: 0;
+
+  width: 450px;
+
+  z-index: 1;
+
+  &--select::after {
+    content: "";
+
+    position: absolute;
+    top: 38px;
+    right: 20px;
+
+    width: 16px;
+    height: 13px;
+
+    background-image: url("../img/icon-triagle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+  }
+}
+
+.consultation__input,
+.consultation__select {
+  position: relative;
+
+  margin: 0;
+  padding: 25px;
+
+  width: 100%;
+
+  border: none;
+  border-bottom: 1px solid #23242a;
+  background: none;
+
+  z-index: 2;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: #273896;
+  }
+}
+
+.consultation__select {
+  appearance: none;
+}
+
+.consultation__submit {
+  padding: 25px 100px;
+  border: none;
+}
