@@ -2887,7 +2887,8 @@ img {
   letter-spacing: 1.13px;
   color: #414147;
   border: 2px solid #00aeef;
-  border-radius: 8px; }
+  border-radius: 8px;
+  cursor: pointer; }
   .use__label:hover, .use__label:focus {
     border: 2px solid #273896;
     transition: all 0.3s; }
@@ -2905,10 +2906,11 @@ img {
 
 .use__card {
   margin-right: 40px;
+  margin-bottom: 40px;
   width: 380px;
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
   border-radius: 8px; }
-  .use__card:last-child {
+  .use__card:nth-child(4n) {
     margin-right: 0; }
   .use__card:hover, .use__card:focus {
     transform: translateY(-10px);
@@ -3178,3 +3180,189 @@ img {
     .contacts__column a:hover, .contacts__column a:focus {
       color: #273896;
       transition: all 0.3s; }
+
+.product__container {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 1700px; }
+
+.product__wrapper {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .product__wrapper h3 {
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 0; }
+
+.product__text {
+  margin-bottom: 80px;
+  padding-right: 820px;
+  line-height: 36px; }
+
+.product__link {
+  color: #414147; }
+
+.product__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.product__item {
+  margin-right: 25px;
+  margin-bottom: 25px; }
+  .product__item:last-child {
+    margin-right: 0; }
+  .product__item input[type="radio"]:checked + .product__label {
+    color: #ffffff;
+    background-color: #00aeef;
+    border-color: #00aeef;
+    transition: all 0.3s; }
+  .product__item input[type="radio"]:checked + .product__label .product__desc {
+    display: block; }
+
+.product__label {
+  display: block;
+  margin: 0;
+  padding: 20px 35px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 1.13px;
+  color: #414147;
+  border: 2px solid #00aeef;
+  border-radius: 8px;
+  cursor: pointer; }
+  .product__label:hover, .product__label:focus {
+    border: 2px solid #273896;
+    transition: all 0.3s; }
+
+.product__desc {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400; }
+
+.product__submit {
+  display: none; }
+
+.product__cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 40px; }
+
+.product__card {
+  margin-right: 40px;
+  margin-bottom: 40px;
+  width: 380px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+  border-radius: 8px; }
+  .product__card:nth-child(4n) {
+    margin-right: 0; }
+  .product__card:hover, .product__card:focus {
+    transform: translateY(-10px);
+    transition: all 0.3s; }
+
+.product__card-image-container {
+  margin: 0;
+  padding: 0;
+  width: 380px;
+  height: 285px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; }
+
+.product__card-image {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; }
+
+.product__card-label {
+  margin: 0;
+  padding: 35px 20px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #273896;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
+.consultation {
+  background-color: #f6f6f6; }
+
+.consultation__container {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 1700px;
+  padding-top: 75px;
+  padding-bottom: 125px; }
+
+.consultation__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0; }
+
+.consultation__text {
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+  padding-right: 980px; }
+
+.consultation__form {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.consultation__item {
+  position: relative;
+  margin: 0;
+  margin-right: 100px;
+  padding: 0;
+  width: 450px;
+  z-index: 1; }
+  .consultation__item--select::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 20px;
+    width: 16px;
+    height: 13px;
+    background-image: url("../img/icon-triagle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1; }
+
+.consultation__input,
+.consultation__select {
+  position: relative;
+  margin: 0;
+  padding: 25px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #23242a;
+  background: none;
+  z-index: 2; }
+  .consultation__input:hover, .consultation__input:focus,
+  .consultation__select:hover,
+  .consultation__select:focus {
+    outline: none;
+    border-color: #273896; }
+
+.consultation__select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+.consultation__submit {
+  padding: 25px 100px;
+  border: none; }
