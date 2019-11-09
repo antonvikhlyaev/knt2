@@ -65,6 +65,67 @@
               <a class="main-nav__link" href="contacts.html">Контакты</a>
             </li>
           </ul>
+          <div class="main-nav__dropdown dropdown dropdown--closed">
+            <div class="dropdown__columns">
+              <div class="dropdown__column">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Ссылка 1</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Ссылка 2</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Ссылка 3</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Длинная ссылка на две строки 4</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Длинная ссылка 5</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown__column">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Ссылка 1</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Ссылка 2</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Ссылка 3</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Ссылка 4</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Ссылка 5</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown__column">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Ссылка 1</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Ссылка 2</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Ссылка 3</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Ссылка 4</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Ссылка 5</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div class="main-nav__wrapper">
             <p class="main-nav__contact contact">
               <a class="contact__link" href="tel:73472943080">+7 347 294 30 80</a>
@@ -97,6 +158,30 @@
         </nav>
       </div>
     </div>
+
+    <script>
+      var dropdown = document.querySelector('.dropdown');
+      var menuDropdown = document.querySelector('.main-nav__link--products');
+
+      var openDropdown = function () {
+        dropdown.classList.remove('dropdown--closed');
+        dropdown.classList.add('dropdown--opened');
+      };
+
+      var closeDropdown = function () {
+        dropdown.classList.remove('dropdown--opened');
+        dropdown.classList.add('dropdown--closed');
+      };
+
+      menuDropdown.addEventListener('mouseover', function (evt) {
+        openDropdown();
+      });
+
+      menuDropdown.addEventListener('mouseout', function (evt) {
+        closeDropdown();
+      });
+    </script>
+
   </header>
   <main class="page-content">
     <h1 class="visually-hidden">Сайт КНТПласт - производство ПВХ-пластика</h1>

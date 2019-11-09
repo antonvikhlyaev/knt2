@@ -1,5 +1,5 @@
 .page-header {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .page-header__container {
@@ -15,7 +15,7 @@
   align-items: center;
 
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   padding: 0;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -99,8 +99,9 @@
 
 .page-header__flag:hover + .page-header__languages,
 .page-header__flag:focus + .page-header__languages {
-  display: block;
-  transition: all 0.3s;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.7s;
 }
 
 .inner-page .page-header {

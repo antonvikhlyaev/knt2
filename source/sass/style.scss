@@ -4,8 +4,10 @@
 @import "mixins";
 @import "variables";
 @import "scaffolding";
+@import "animation.scss";
 @import "blocks/button";
 @import "blocks/heading";
+@import "blocks/dropdown";
 @import "blocks/visually-hidden";
 @import "blocks/page-header";
 @import "blocks/main-nav";
@@ -21,3 +23,4 @@
 @import "blocks/product";
 @import "blocks/consultation";
 @import "blocks/illiquid";
+
