@@ -3366,3 +3366,99 @@ img {
 .consultation__submit {
   padding: 25px 100px;
   border: none; }
+
+.illiquid__container {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 1700px; }
+
+.illiquid__wrapper {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.illiquid__search {
+  position: relative;
+  margin-bottom: 100px;
+  width: 360px;
+  z-index: 1; }
+  .illiquid__search::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 31px;
+    height: 31px;
+    background-image: url("../img/icon-search.svg");
+    background-position: center;
+    background-repeat: no-repeat; }
+
+.illiquid__input {
+  margin: 0;
+  padding: 15px;
+  padding-right: 55px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #23242a;
+  background: none;
+  z-index: 2; }
+  .illiquid__input:hover, .illiquid__input:focus {
+    outline: none;
+    border-color: #273896; }
+
+.illiquid__table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border: none; }
+
+.illiquid__table-head {
+  margin: 0;
+  padding: 0;
+  font-weight: 700; }
+
+.illiquid__item td {
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: none;
+  border-bottom: 1px solid #9a9a9d; }
+
+.illiquid__item:last-child td {
+  border: none; }
+
+.illiquid__name {
+  width: 580px; }
+
+.illiquid__amount {
+  width: 460px; }
+
+.illiquid__files {
+  width: 345px; }
+
+.illiquid__link {
+  position: relative;
+  padding-left: 60px;
+  color: #414147; }
+  .illiquid__link:hover, .illiquid__link:focus {
+    color: #273896;
+    transition: all 0.3s; }
+
+.illiquid__link--pdf::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 40px;
+  height: 57px;
+  background-image: url("../img/icon-pdf.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.illiquid__button {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 20px;
+  border: none; }
