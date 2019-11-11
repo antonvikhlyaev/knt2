@@ -30,37 +30,24 @@
 
   &--left {
     padding-right: 820px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 150px;
-      right: 0;
-
-      width: 788px;
-      height: 543px;
-
-      background-image: url("../img/sitio-residuos-plasticos.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
   }
 
   &--right {
     padding-left: 820px;
+  }
+}
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 220px;
-      left: 0;
+.inner-page .about__image {
+  position: absolute;
+  border-radius: 10px;
 
-      width: 769px;
-      height: 491px;
+  &--right {
+    top: 150px;
+    right: 0;
+  }
 
-      background-image: url("../img/gloves.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  &--left {
+    top: 200px;
+    left: 0;
   }
 }
