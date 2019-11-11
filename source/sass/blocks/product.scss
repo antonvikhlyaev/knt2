@@ -28,12 +28,12 @@
 }
 
 .product__list {
+  @include resetList;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 50px;
-
-  @include resetList;
 }
 
 .product__item {
@@ -95,12 +95,12 @@
 }
 
 .product__cards {
+  @include resetList;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 40px;
-
-  @include resetList;
 }
 
 .product__card {

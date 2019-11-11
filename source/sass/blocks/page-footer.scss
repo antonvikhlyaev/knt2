@@ -3,13 +3,13 @@
 }
 
 .page-footer__container {
+  @include container;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 70px;
   padding-bottom: 30px;
-
-  @include container;
 }
 
 .page-footer__contact {

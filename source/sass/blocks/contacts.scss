@@ -44,12 +44,12 @@
 }
 
 .contacts__list {
+  @include resetList;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 50px;
-
-  @include resetList;
 }
 
 .contacts__item {

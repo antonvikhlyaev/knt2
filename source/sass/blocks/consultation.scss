@@ -3,10 +3,10 @@
 }
 
 .consultation__container {
+  @include container;
+
   padding-top: 75px;
   padding-bottom: 125px;
-
-  @include container;
 }
 
 .consultation__title {

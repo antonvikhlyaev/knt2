@@ -7,10 +7,10 @@
 }
 
 .slider__list {
+  @include resetList;
+
   position: relative;
   z-index: 2;
-
-  @include resetList;
 }
 
 .slider__item {
@@ -54,6 +54,8 @@
 }
 
 .slider__controls {
+  @include resetList;
+
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -62,8 +64,6 @@
   flex-direction: row;
 
   transform: translateX(-50%);
-
-  @include resetList;
 
   & li {
     margin-right: 20px;

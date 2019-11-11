@@ -3,11 +3,11 @@
 }
 
 .main-nav__list {
+  @include resetList;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
-
-  @include resetList;
 }
 
 .main-nav__link {

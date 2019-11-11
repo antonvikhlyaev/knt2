@@ -1,8 +1,8 @@
 .use__container {
+  @include container;
+
   padding-top: 100px;
   padding-bottom: 100px;
-
-  @include container;
 }
 
 .use__title {
@@ -10,12 +10,12 @@
 }
 
 .use__list {
+  @include resetList;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 50px;
-
-  @include resetList;
 }
 
 .use__item {
@@ -65,11 +65,11 @@
 }
 
 .use__cards {
+  @include resetList;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-  @include resetList;
 }
 
 .use__card {

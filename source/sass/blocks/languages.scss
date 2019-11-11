@@ -33,6 +33,8 @@
 }
 
 .languages__list {
+  @include resetList;
+
   position: relative;
 
   display: flex;
@@ -41,8 +43,6 @@
 
   background-color: #ffffff;
   border-radius: 8px;
-
-  @include resetList;
 }
 
 .languages__item {
