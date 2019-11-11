@@ -13,7 +13,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
@@ -34,8 +33,8 @@
 
 .page-header__contact {
   margin: 0;
-  margin-left: auto;
   margin-right: 50px;
+  margin-left: auto;
   padding: 0;
 }
 
@@ -45,17 +44,21 @@
 
 .page-header__toggle.page-header__toggle--open {
   position: relative;
+
   width: 34px;
-  border: none;
+
   background: none;
+  border: none;
 
   &::before {
     content: "";
     position: absolute;
     top: 5px;
     right: 3px;
+
     width: 28px;
     height: 3px;
+
     background-color: #000000;
     border: 0;
     box-shadow: 0 10px 0 0 #000000, 0 20px 0 0 #000000;
@@ -64,17 +67,21 @@
 
 .page-header__toggle.page-header__toggle--close {
   position: relative;
+
   width: 34px;
-  border: none;
+
   background: none;
+  border: none;
 
   &::before {
     content: "";
     position: absolute;
     top: 16px;
     left: 3px;
+
     width: 28px;
     height: 2px;
+
     background-color: #000000;
     transform: rotate(45deg);
   }
@@ -84,23 +91,27 @@
     position: absolute;
     top: 16px;
     left: 3px;
+
     width: 28px;
     height: 2px;
+
     background-color: #000000;
     transform: rotate(-45deg);
   }
 }
 
 .page-header__languages {
-  display: none;
   top: 100px;
   right: -165px;
+
+  display: none;
 }
 
 .page-header__flag:hover + .page-header__languages,
 .page-header__flag:focus + .page-header__languages {
   visibility: visible;
   opacity: 1;
+
   transition: 0.7s;
 }
 

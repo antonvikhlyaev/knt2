@@ -14,8 +14,9 @@
 
   &:hover,
   &:focus {
-    outline: none;
     background-color: #0e1d72;
+    outline: none;
+
     transition: all 0.3s;
   }
 

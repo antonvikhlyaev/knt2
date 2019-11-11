@@ -3,29 +3,29 @@
 }
 
 .main-nav__list {
-  @include resetList;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  @include resetList;
 }
 
 .main-nav__link {
   display: block;
-
   margin: 0;
   padding: 20px 40px;
 
-  font-size: 28px;
   font-weight: 400;
-  letter-spacing: 0.42px;
-
+  font-size: 28px;
   color: #000000;
+  letter-spacing: 0.42px;
 
   &:hover,
   &:focus {
-    outline: none;
     color: #283891;
+
+    outline: none;
+
     transition: all 0.3s;
   }
 

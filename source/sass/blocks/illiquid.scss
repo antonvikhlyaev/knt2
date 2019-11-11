@@ -11,42 +11,42 @@
 
 .illiquid__search {
   position: relative;
-  margin-bottom: 100px;
+  z-index: 1;
 
   width: 360px;
-
-  z-index: 1;
+  margin-bottom: 100px;
 
   &::before {
     content: "";
     position: absolute;
     top: 15px;
     right: 10px;
+
     width: 31px;
     height: 31px;
+
     background-image: url("../img/icon-search.svg");
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 .illiquid__input {
+  z-index: 2;
+
+  width: 100%;
   margin: 0;
   padding: 15px;
   padding-right: 55px;
 
-  width: 100%;
-
+  background: none;
   border: none;
   border-bottom: 1px solid #23242a;
-  background: none;
-
-  z-index: 2;
 
   &:hover,
   &:focus {
-    outline: none;
     border-color: #273896;
+    outline: none;
   }
 }
 

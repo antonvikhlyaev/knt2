@@ -1,20 +1,15 @@
 .languages {
-  display: block;
-
   position: absolute;
+  z-index: 10;
 
+  display: block;
   width: 300px;
   min-height: 154px;
 
   background-color: #ffffff;
-
   border-radius: 8px;
-
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-
   transform: translateX(-50%);
-  z-index: 10;
-
   visibility: hidden;
   opacity: 0;
 
@@ -26,7 +21,6 @@
 
   &::before {
     content: "";
-
     position: absolute;
     top: -8px;
     right: 0;
@@ -39,23 +33,22 @@
 }
 
 .languages__list {
-  @include resetList;
+  position: relative;
 
   display: flex;
   flex-direction: column;
-  position: relative;
-
   padding: 20px;
 
-  border-radius: 8px;
   background-color: #ffffff;
+  border-radius: 8px;
+
+  @include resetList;
 }
 
 .languages__item {
   display: flex;
   flex-direction: row;
   align-items: center;
-
   margin-bottom: 15px;
 
   &:last-child {
@@ -85,8 +78,10 @@
 
   &:hover,
   &:focus {
-    outline: none;
     color: #283891;
+
+    outline: none;
+
     transition: all 0.3s;
   }
 }
@@ -98,4 +93,3 @@
   font-size: 16px;
   color: #413d3d;
 }
-

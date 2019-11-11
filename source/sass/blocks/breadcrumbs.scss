@@ -1,16 +1,16 @@
 .breadcrumbs__list {
-  @include container;
-
   display: flex;
   flex-direction: row;
 
+  list-style: none;
   font-size: 24px;
 
-  list-style: none;
+  @include container;
 }
 
 .breadcrumbs__item {
   position: relative;
+
   padding-right: 40px;
 
   &:last-child::after {
@@ -19,7 +19,6 @@
 
   &::after {
     content: ">";
-
     position: absolute;
     right: 11px;
 
@@ -37,6 +36,7 @@
   &:hover,
   &:focus {
     color: #283891;
+
     transition: all 0.3s;
   }
 }

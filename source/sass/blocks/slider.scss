@@ -7,31 +7,30 @@
 }
 
 .slider__list {
-  @include resetList;
   position: relative;
   z-index: 2;
+
+  @include resetList;
 }
 
 .slider__item {
   position: relative;
 
   padding-top: 170px;
-
   overflow: hidden;
 
   &::after {
     content: "";
-
-    width: 800px;
-    height: 880px;
-
     position: absolute;
     top: 0;
     right: -200px;
 
+    width: 800px;
+    height: 880px;
+
     background-image: url("../img/slide-bg.png");
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 100%;
   }
 }
@@ -42,13 +41,12 @@
   padding: 0;
   padding-right: 400px;
 
-  font-size: 127px;
   font-weight: 700;
-  color: #1a1a1b;
+  font-size: 127px;
   line-height: 145.66px;
-  letter-spacing: 2px;
-
+  color: #1a1a1b;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .slider__button {
@@ -56,16 +54,16 @@
 }
 
 .slider__controls {
-  @include resetList;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
 
   display: flex;
   flex-direction: row;
 
-  position: absolute;
-  left: 50%;
-  bottom: 50px;
-
   transform: translateX(-50%);
+
+  @include resetList;
 
   & li {
     margin-right: 20px;
@@ -75,24 +73,23 @@
     }
 
     & button {
+      width: 20px;
+      height: 20px;
       margin: 0;
       padding: 0;
 
       font-size: 0;
 
-      width: 20px;
-      height: 20px;
-
+      background-color: #dedede;
       border: none;
       border-radius: 50%;
-      background-color: #dedede;
-
       cursor: pointer;
 
       &:hover,
       &:focus {
         background-color: #0e1d72;
         outline: none;
+
         transition: all 0.3s;
       }
     }
