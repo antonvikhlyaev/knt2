@@ -135,3 +135,21 @@
 
   border: none;
 }
+
+@media (max-width: $extra-desktop-width) {
+  .illiquid__name {
+    width: 480px;
+  }
+
+  .illiquid__amount {
+    width: 360px;
+  }
+
+  .illiquid__files {
+    width: 345px;
+  }
+
+  .illiquid__button {
+    width: 220px;
+  }
+}

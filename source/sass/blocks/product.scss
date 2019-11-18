@@ -152,3 +152,29 @@
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
 }
+
+@media (max-width: $extra-desktop-width) {
+  .product__label {
+    padding: 15px 30px;
+  }
+
+  .product__card {
+    width: 277px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .product__card-label {
+    padding: 25px 20px;
+    font-size: 20px;
+  }
+
+  .product__card-image-container {
+    width: 277px;
+    height: 208px;
+  }
+}

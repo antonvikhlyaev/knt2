@@ -82,3 +82,24 @@
 
   border: none;
 }
+
+@media (max-width: $extra-desktop-width) {
+  .consultation__container {
+    padding-top: 75px;
+    padding-bottom: 125px;
+  }
+
+  .consultation__text {
+    padding-right: 700px;
+  }
+
+  .consultation__item {
+    width: 336px;
+  }
+
+
+  .consultation__submit {
+    display: block;
+    padding: 25px 75px;
+  }
+}

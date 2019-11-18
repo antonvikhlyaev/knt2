@@ -118,3 +118,9 @@
     }
   }
 }
+
+@media (max-width: $extra-desktop-width) {
+  .contacts__label {
+    padding: 15px 30px;
+  }
+}

@@ -40,3 +40,9 @@
     transition: all 0.3s;
   }
 }
+
+@media (max-width: $extra-desktop-width) {
+  .breadcrumbs__list {
+    font-size: 20px;
+  }
+}
