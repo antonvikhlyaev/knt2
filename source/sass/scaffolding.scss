@@ -14,6 +14,7 @@ html {
 
 body {
   width: 100%;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -32,4 +33,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: $extra-desktop-width) {
+  body {
+    font-size: 20px;
+  }
 }

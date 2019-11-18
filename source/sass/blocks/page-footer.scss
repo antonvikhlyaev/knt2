@@ -47,3 +47,10 @@
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: $extra-desktop-width) {
+  .page-footer__container {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+}

@@ -9,4 +9,10 @@
   width: $extra-desktop-width;
   margin: 0 auto;
   padding: 0 30px;
+
+  @media (max-width: $extra-desktop-width) {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1200px;
+  }
 }

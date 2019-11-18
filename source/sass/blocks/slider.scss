@@ -1,4 +1,5 @@
 .slider {
+  width: 100%;
   background-color: #f6f7f7;
 }
 
@@ -36,6 +37,8 @@
 }
 
 .slider__title {
+  position: relative;
+
   margin: 0;
   margin-bottom: 100px;
   padding: 0;
@@ -47,6 +50,8 @@
   color: #1a1a1b;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  z-index: 10;
 }
 
 .slider__button {
@@ -97,5 +102,21 @@
     &.slick-active button {
       background-color: #00aeef;
     }
+  }
+}
+
+@media (max-width: $extra-desktop-width) {
+  .slider__item {
+    padding-top: 120px;
+  }
+
+  .slider__title {
+    margin-bottom: 50px;
+    font-size: 92px;
+    line-height: 100px;
+  }
+
+  .slider__button {
+    margin-bottom: 120px;
   }
 }

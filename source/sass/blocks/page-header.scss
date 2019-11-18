@@ -118,3 +118,12 @@
 .inner-page .page-header {
   margin-bottom: 60px;
 }
+
+@media (max-width: $extra-desktop-width) {
+  .page-header__logo {
+    &-image {
+      width: 240px;
+      height: auto;
+    }
+  }
+}
