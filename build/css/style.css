@@ -3004,7 +3004,6 @@ img {
 
 .inner-page .about__container {
   padding-top: 0;
-  padding-left: 30px;
   background: none; }
 
 .inner-page .about__wrapper {
@@ -3032,10 +3031,31 @@ img {
   .about__container {
     padding-top: 200px;
     padding-bottom: 100px;
-    padding-left: 500px;
-    background-image: url("../img/about.png");
-    background-repeat: no-repeat;
-    background-position: top 80px left 0; } }
+    padding-left: 500px; }
+  .inner-page .about__container {
+    padding: 0 15px;
+    padding-bottom: 100px;
+    background: none; }
+  .inner-page .about__wrapper {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .inner-page .about__wrapper:last-child {
+      margin-bottom: 0; }
+    .inner-page .about__wrapper--left {
+      padding-right: 585px; }
+    .inner-page .about__wrapper--right {
+      padding-left: 585px; }
+  .inner-page .about__image {
+    position: absolute;
+    border-radius: 10px;
+    max-width: 500px; }
+    .inner-page .about__image--right {
+      top: 150px;
+      right: 0; }
+    .inner-page .about__image--left {
+      top: 200px;
+      left: 0; } }
 
 .use__container {
   width: 1700px;
@@ -3308,6 +3328,10 @@ img {
     color: #283891;
     transition: all 0.3s; }
 
+@media (max-width: 1700px) {
+  .breadcrumbs__list {
+    font-size: 20px; } }
+
 .contacts__container {
   width: 1700px;
   margin: 0 auto;
@@ -3400,6 +3424,10 @@ img {
     .contacts__column a:hover, .contacts__column a:focus {
       color: #273896;
       transition: all 0.3s; }
+
+@media (max-width: 1700px) {
+  .contacts__label {
+    padding: 15px 30px; } }
 
 .product__container {
   width: 1700px;
@@ -3522,6 +3550,22 @@ img {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px; }
 
+@media (max-width: 1700px) {
+  .product__label {
+    padding: 15px 30px; }
+  .product__card {
+    width: 277px;
+    margin-right: 20px;
+    margin-bottom: 20px; }
+    .product__card:nth-child(4n) {
+      margin-right: 0; }
+  .product__card-label {
+    padding: 25px 20px;
+    font-size: 20px; }
+  .product__card-image-container {
+    width: 277px;
+    height: 208px; } }
+
 .consultation {
   background-color: #f6f6f6; }
 
@@ -3596,6 +3640,18 @@ img {
 .consultation__submit {
   padding: 25px 100px;
   border: none; }
+
+@media (max-width: 1700px) {
+  .consultation__container {
+    padding-top: 75px;
+    padding-bottom: 125px; }
+  .consultation__text {
+    padding-right: 700px; }
+  .consultation__item {
+    width: 336px; }
+  .consultation__submit {
+    display: block;
+    padding: 25px 75px; } }
 
 .illiquid__container {
   width: 1700px;
@@ -3698,3 +3754,13 @@ img {
   padding: 20px 0;
   font-size: 20px;
   border: none; }
+
+@media (max-width: 1700px) {
+  .illiquid__name {
+    width: 480px; }
+  .illiquid__amount {
+    width: 360px; }
+  .illiquid__files {
+    width: 345px; }
+  .illiquid__button {
+    width: 220px; } }
