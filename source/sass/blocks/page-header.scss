@@ -101,7 +101,7 @@
 }
 
 .page-header__languages {
-  top: 100px;
+  top: 95px;
   right: -165px;
 
   display: none;
@@ -125,5 +125,9 @@
       width: 240px;
       height: auto;
     }
+  }
+
+  .page-header__languages {
+    top: 75px;
   }
 }

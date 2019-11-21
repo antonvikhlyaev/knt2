@@ -93,3 +93,9 @@
   font-size: 16px;
   color: #413d3d;
 }
+
+@media (max-width: $extra-desktop-width) {
+  .languages {
+    min-height: 137px;
+  }
+}
