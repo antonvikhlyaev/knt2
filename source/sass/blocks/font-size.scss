@@ -1,0 +1,63 @@
+.font-size {
+  font-size: 28px;
+
+  &--increased {
+    font-size: 32px;
+  }
+}
+
+.font-size__buttons {
+  position: absolute;
+  top: 54px;
+  right: -60px;
+}
+
+.font-size__button {
+  margin: 0;
+  padding: 0;
+
+  width: 35px;
+  height: 35px;
+
+  background: none;
+  border: none;
+
+  opacity: 0.5;
+
+  cursor: pointer;
+
+  &--increase {
+    background-image: url("../img/icon-font-size-plus.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--decrease {
+    background-image: url("../img/icon-font-size-minus.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    opacity: 1;
+    transition: all 0.3s;
+  }
+}
+
+@media (max-width: $extra-desktop-width) {
+  .font-size {
+    font-size: 20px;
+
+    &--increased {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: $extra-desktop-width) {
+  .font-size__buttons {
+    top: 36px;
+  }
+}

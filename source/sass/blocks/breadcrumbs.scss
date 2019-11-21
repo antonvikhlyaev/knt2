@@ -5,7 +5,7 @@
   flex-direction: row;
 
   list-style: none;
-  font-size: 24px;
+  font-size: 0.85rem;
 }
 
 .breadcrumbs__item {
@@ -43,6 +43,6 @@
 
 @media (max-width: $extra-desktop-width) {
   .breadcrumbs__list {
-    font-size: 20px;
+    font-size: 1rem;
   }
 }

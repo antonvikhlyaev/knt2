@@ -12,7 +12,7 @@
   padding: 10px;
 
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1rem;
   color: #000000;
   letter-spacing: 0.42px;
 
@@ -32,10 +32,10 @@
 
 @media (max-width: $extra-desktop-width) {
   .contact__link {
-    font-size: 24px;
+    font-size: 1.2rem;
   }
 
   .page-footer .contact__link {
-    font-size: 20px;
+    font-size: 1rem;
   }
 }
