@@ -2795,7 +2795,7 @@ img {
     transform: rotate(-45deg); }
 
 .page-header__languages {
-  top: 100px;
+  top: 95px;
   right: -165px;
   display: none; }
 
@@ -2811,7 +2811,9 @@ img {
 @media (max-width: 1700px) {
   .page-header__logo-image {
     width: 240px;
-    height: auto; } }
+    height: auto; }
+  .page-header__languages {
+    top: 75px; } }
 
 .mail-nav {
   position: relative; }
@@ -3298,6 +3300,10 @@ img {
   padding: 0;
   font-size: 16px;
   color: #413d3d; }
+
+@media (max-width: 1700px) {
+  .languages {
+    min-height: 137px; } }
 
 .breadcrumbs__list {
   width: 1700px;
