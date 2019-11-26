@@ -2507,7 +2507,7 @@ template {
 
 html {
   box-sizing: border-box;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 400;
   font-family: "PT Sans", sans-serif;
   color: #414147; }
@@ -2531,7 +2531,7 @@ img {
 
 @media (max-width: 1700px) {
   html {
-    font-size: 20px; } }
+    font-size: 16px; } }
 
 @-webkit-keyframes show {
   0% {
@@ -2566,7 +2566,7 @@ img {
     outline: none; }
 
 .button--antiman {
-  height: 95px;
+  height: 90px;
   background: none;
   border: none; }
 
@@ -2648,9 +2648,9 @@ img {
     font-size: 3rem; } }
 
 .font-size {
-  font-size: 28px; }
+  font-size: 24px; }
   .font-size--increased {
-    font-size: 32px; }
+    font-size: 28px; }
 
 .font-size__buttons {
   position: absolute;
@@ -2981,10 +2981,10 @@ img {
   margin: 0;
   margin-bottom: 100px;
   padding: 0;
-  padding-right: 400px;
+  padding-right: 650px;
   font-weight: 700;
   font-size: 4.5rem;
-  line-height: 145.66px;
+  line-height: normal;
   color: #1a1a1b;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -3029,8 +3029,9 @@ img {
     padding-top: 120px; }
   .slider__title {
     margin-bottom: 50px;
+    padding-right: 500px;
     font-size: 4.6rem;
-    line-height: 100px; }
+    line-height: normal; }
   .slider__button {
     margin-bottom: 120px; } }
 
@@ -3052,12 +3053,14 @@ img {
 
 .inner-page .about__container {
   padding-top: 0;
+  padding-bottom: 150px;
+  padding-left: 0;
   background: none; }
 
 .inner-page .about__wrapper {
   position: relative;
   margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
   .inner-page .about__wrapper:last-child {
     margin-bottom: 0; }
   .inner-page .about__wrapper--left {
@@ -3067,12 +3070,13 @@ img {
 
 .inner-page .about__image {
   position: absolute;
-  border-radius: 10px; }
+  border-radius: 10px;
+  max-width: 700px; }
   .inner-page .about__image--right {
-    top: 150px;
+    top: 100px;
     right: 0; }
   .inner-page .about__image--left {
-    top: 200px;
+    top: 100px;
     left: 0; }
 
 @media (max-width: 1700px) {
@@ -3102,7 +3106,7 @@ img {
       top: 150px;
       right: 0; }
     .inner-page .about__image--left {
-      top: 200px;
+      top: 100px;
       left: 0; } }
 
 .use__container {
