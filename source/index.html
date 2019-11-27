@@ -47,6 +47,9 @@
           </ul>
         </div>
         <div class="page-header__font-size font-size__buttons">
+          <button class="font-size__button font-size__button--decrease" type="button">
+            <span class="visually-hidden">Уменьшить текст</span>
+          </button>
           <button class="font-size__button font-size__button--increase" type="button">
             <span class="visually-hidden">Увеличить текст</span>
           </button>
@@ -343,26 +346,21 @@
   </script>
   <script>
       var page = document.querySelector('html');
-      var buttonFontSize = document.querySelector('.font-size__button');
+      var buttonDecreasedFontSize = document.querySelector('.font-size__button--decrease');
+      var buttonIncreasedFontSize = document.querySelector('.font-size__button--increase');
 
-      var changeButtonFontSize = function (isStandartFontSize) {
-        if (isStandartFontSize) {
-          buttonFontSize.classList.remove('font-size__button--increase');
-          buttonFontSize.classList.add('font-size__button--decrease');
-          buttonFontSize.querySelector('span').textContent = 'Уменьшить текст';
-        } else {
-          buttonFontSize.classList.remove('font-size__button--decrease');
-          buttonFontSize.classList.add('font-size__button--increase');
-          buttonFontSize.querySelector('span').textContent = 'Увеличить текст';
-        }
-      };
+      var decreasedFontSize = function (evt) {
+        evt.preventDefault();
+        page.classList.toggle('font-size--decreased');
+      }
 
-      var changeFontSize = function () {
-        page.classList.contains('font-size--increased') ? changeButtonFontSize(false) : changeButtonFontSize(true);
+      var increasedFontSize = function (evt) {
+        evt.preventDefault();
         page.classList.toggle('font-size--increased');
       }
 
-      buttonFontSize.addEventListener('click', changeFontSize);
+      buttonDecreasedFontSize.addEventListener('click', decreasedFontSize);
+      buttonIncreasedFontSize.addEventListener('click', increasedFontSize);
     </script>
 </body>
 </html>
