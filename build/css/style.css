@@ -2656,13 +2656,14 @@ img {
 
 .font-size__buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: absolute;
-  top: 40px;
+  top: 57px;
   right: -60px; }
 
 .font-size__button {
   margin: 0;
+  margin-right: 3px;
   padding: 0;
   width: 25px;
   height: 25px;
@@ -2682,6 +2683,8 @@ img {
     outline: none;
     opacity: 1;
     transition: all 0.3s; }
+  .font-size__button:last-child {
+    margin-right: 0; }
 
 @media (max-width: 1700px) {
   .font-size {
@@ -2693,7 +2696,7 @@ img {
 
 @media (max-width: 1700px) {
   .font-size__buttons {
-    top: 36px; } }
+    top: 41px; } }
 
 .dropdown {
   position: absolute;

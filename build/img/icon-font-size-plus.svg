@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
-    <title>A+</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="PTSans-Regular, PT Sans" font-size="24" font-weight="normal" letter-spacing="-0.24">
-        <g id="Artboard" transform="translate(-56.000000, -49.000000)" fill="#414147">
-            <text id="A+">
-                <tspan x="56.16" y="67">A+</tspan>
-            </text>
-        </g>
-    </g>
-</svg>
+<svg height="25" viewBox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><rect height="24" rx="5" stroke="#414147" width="24" x=".5" y=".5"/><path d="m10.862 14.284h-3.612l-.98 2.716h-1.148l3.71-9.954h.532l3.724 9.954h-1.218zm-3.234-1.008h2.884l-1.092-2.982-.35-1.484h-.014l-.35 1.512zm5.992-1.512h2.464v-2.52h1.008v2.52h2.464v1.008h-2.464v2.52h-1.008v-2.52h-2.464z" fill="#414147" fill-rule="nonzero"/></g></svg>
