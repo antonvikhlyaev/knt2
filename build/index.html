@@ -351,12 +351,20 @@
 
       var decreasedFontSize = function (evt) {
         evt.preventDefault();
-        page.classList.toggle('font-size--decreased');
+        if (page.classList.contains('font-size--increased')) {
+          page.classList.remove('font-size--increased');
+        } else {
+          page.classList.add('font-size--decreased');
+        }
       }
 
       var increasedFontSize = function (evt) {
         evt.preventDefault();
-        page.classList.toggle('font-size--increased');
+        if (page.classList.contains('font-size--decreased')) {
+          page.classList.remove('font-size--decreased');
+        } else {
+          page.classList.add('font-size--increased');
+        }
       }
 
       buttonDecreasedFontSize.addEventListener('click', decreasedFontSize);
